@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  /* font-size: 62.5%; */
+  /* 1rem = 10px  */
+  scroll-behavior: smooth;
+}
+body {
+  --main-color: #1877f2;
+  --text-color: #575555;
+  --secondary-text-color: #fff;
+  --btn-bg: #e4e6eb;
+
+  background-color: #f0f2f5;
+}
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 900 !important;
+  color: var(--heading-color);
+}
+h3 {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: var(--heading-color);
+}
+p {
+  color: var(--text-color);
+}
+p,
+li,
+a,
+button,
+input {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: none;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+input,
+textarea {
+  padding: 5px 5px;
+  color: var(--text-color);
+  margin-bottom: 7px;
+  font-size: 15px;
+  width: 100%;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+a {
+  cursor: pointer;
+  text-decoration: none !important;
+  color: var(--text-color);
+}
+
+i {
+  color: var(--text-color);
+  font-size: 22px;
+  margin-right: 13px;
+}
+/* cutom clss  */
+.bg-white {
+  background-color: #fff;
+}
+.br-rad {
+  border-radius: 10px;
+}
+.btn_1 {
+  background-color: var(--btn-bg);
+  color: black;
+  font-weight: 500;
+}
+.btn_2 {
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ............................ login page style ........................ */
+
+.login {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fb_heading {
+  color: #1877f2;
+  font-size: 60px;
+}
+
+.login_form {
+  /* border: 2px solid grey; */
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 6px 10px 19px 0px rgba(128, 128, 128, 1);
+}
+.log_btn {
+  background-color: var(--main-color);
+  color: var(--secondary-text-color);
+  padding: 5px 20px;
+  width: 100%;
+  border: none;
+  text-transform: capitalize;
+}
+.log_btn:hover {
+  background-color: #196ddb;
+}
+.ca_btn {
+  background-color: var(--main-color);
+  background-color: #42b72a;
+  color: #fff;
+  padding: 10px 20px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+  text-transform: capitalize !important;
+}
+.ca_btn:hover {
+  color: #fff;
+  background-color: #33a81c;
+}
+.fg_Pass {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+/* ............................ Profile page style ........................ */
+
+.pf_content {
+  margin-top: -50px;
+}
+.profile-cover-pic img {
+  width: 100%;
+  height: 300px;
+  /* border: 2px solid #fff; */
+  border-radius: 0px 0px 10px 10px;
+}
+.profile-pic {
+  clip-path: circle(50% at 50% 50%);
+  height: 200px;
+}
+
+.pf-btns {
+  margin-left: auto;
+}
+
+/* post style here  */
+.post_header img,
+.online_member img {
+  height: 60px;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.post_header p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.action_btns ul {
+  gap: 100px;
+}
+
+.cmt_box {
+  padding: 5px 10px;
+  background-color: #f0f2f5;
+  border-radius: 20px;
+  width: 100%;
+  border: none;
+}
+
+/*--------------------- Home style stsrt here --------------------- */
+.add_story , .st_slide{
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  border: 2px solid rgb(218, 218, 218);
+}
+.add_story img{
+  height: 80%;
+  width: 100%;
+}
+.add_story i{
+  margin-top: -20px;
+  font-size: 30px;
+  color: var(--main-color);
+  /* border: 2px solid black; */
+}
+.add_story h4 ,
+.st_slide h4{
+  font-size: 15px;
+  margin-top: 10px;
+
+}
+
+.st_slide img{
+  width: 100%;
+  height: 90%;
+}
+
+/* online member section styel here  */
+.online_member  {
+  align-items: center;
+}
+.online{
+/* position: absolute; */
+} 
+.inner{
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  /* position: relative; */
+}
+.online_member h3{
+  margin-left: -25px;
+}
+
+
+
+
+/*--------------------- media query stsrt here --------------------- */
+
+@media (max-width: 1000px) {
+  h2 {
+    font-size: 22px;
+  }
+  .pf_content {
+    margin-top: -30px;
+  }
+  .pf-btns {
+    display: none;
+  }
+  
+}
+@media (max-width: 550px) {
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  .action_btns ul {
+    gap: 60px;
+  }
+}
+@media (max-width: 430px) {
+  .pf_content {
+    margin-top: -10px;
+  }
+  .profile-pic {
+    height: 115px;
+  }
+  .pf-name h1 {
+    font-size: 18px;
+  }
+  .action_btns ul {
+    gap: 30px;
+  }
+
+  .post_btns ul li,
+  .post_btns ul li i
+  {
+    font-size: 15px;
+    
+  }
+
+  .action_btns ul li,
+  .action_btns ul li i {
+    font-size: 15px;
+  }
+}
