@@ -3,11 +3,13 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   /* font-size: 62.5%; */
   /* 1rem = 10px  */
   scroll-behavior: smooth;
 }
+
 body {
   --main-color: #1877f2;
   --text-color: #575555;
@@ -16,6 +18,7 @@ body {
 
   background-color: #f0f2f5;
 }
+
 h1,
 h2 {
   font-family: "Roboto", sans-serif;
@@ -23,14 +26,17 @@ h2 {
   font-weight: 900 !important;
   color: var(--heading-color);
 }
+
 h3 {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   color: var(--heading-color);
 }
+
 p {
   color: var(--text-color);
 }
+
 p,
 li,
 a,
@@ -42,6 +48,7 @@ input {
   font-style: normal;
   text-transform: none;
 }
+
 ul,
 li {
   list-style: none;
@@ -50,6 +57,7 @@ li {
   gap: 20px;
   padding-bottom: 10px;
 }
+
 input,
 textarea {
   padding: 5px 5px;
@@ -58,14 +66,20 @@ textarea {
   font-size: 15px;
   width: 100%;
 }
+
 textarea:focus,
 input:focus {
   outline: none;
 }
+
 a {
   cursor: pointer;
   text-decoration: none !important;
   color: var(--text-color);
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 i {
@@ -73,23 +87,34 @@ i {
   font-size: 22px;
   margin-right: 13px;
 }
+
+i:hover {
+  color: var(--main-color);
+}
+
 /* cutom clss  */
 .bg-white {
   background-color: #fff;
 }
+
 .br-rad {
   border-radius: 10px;
 }
+
 .btn_1 {
   background-color: var(--btn-bg);
   color: black;
   font-weight: 500;
 }
+
 .btn_2 {
   background-color: var(--main-color);
   color: #fff;
   font-weight: 500;
 }
+
+/* ---------------------------- navbar style here  */
+.nav-bar {}
 
 /* ............................ login page style ........................ */
 
@@ -100,9 +125,10 @@ i {
   justify-content: center;
   align-items: center;
 }
+
 .fb_heading {
   color: #1877f2;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .login_form {
@@ -112,6 +138,7 @@ i {
   border-radius: 15px;
   box-shadow: 6px 10px 19px 0px rgba(128, 128, 128, 1);
 }
+
 .log_btn {
   background-color: var(--main-color);
   color: var(--secondary-text-color);
@@ -120,9 +147,11 @@ i {
   border: none;
   text-transform: capitalize;
 }
+
 .log_btn:hover {
   background-color: #196ddb;
 }
+
 .ca_btn {
   background-color: var(--main-color);
   background-color: #42b72a;
@@ -133,10 +162,12 @@ i {
   border-radius: 8px;
   text-transform: capitalize !important;
 }
+
 .ca_btn:hover {
   color: #fff;
   background-color: #33a81c;
 }
+
 .fg_Pass {
   font-size: 16px;
   color: var(--text-color);
@@ -147,12 +178,14 @@ i {
 .pf_content {
   margin-top: -50px;
 }
+
 .profile-cover-pic img {
   width: 100%;
   height: 300px;
   /* border: 2px solid #fff; */
   border-radius: 0px 0px 10px 10px;
 }
+
 .profile-pic {
   clip-path: circle(50% at 50% 50%);
   height: 200px;
@@ -173,8 +206,9 @@ i {
   font-size: 14px;
   margin-bottom: 5px;
 }
+
 .action_btns ul {
-  gap: 100px;
+  justify-content: space-evenly;
 }
 
 .cmt_box {
@@ -186,51 +220,64 @@ i {
 }
 
 /*--------------------- Home style stsrt here --------------------- */
-.add_story , .st_slide{
+.post_btns ul {
+  justify-content: space-evenly;
+}
+
+
+.add_story,
+.st_slide {
   text-align: center;
   margin-right: 10px;
   border-radius: 10px;
-  width: 200px;
-  height: 300px;
   border: 2px solid rgb(218, 218, 218);
 }
-.add_story img{
+
+.add_story img {
   height: 80%;
   width: 100%;
+  border-radius: 10px;
 }
-.add_story i{
+
+.add_story i {
   margin-top: -20px;
   font-size: 30px;
   color: var(--main-color);
   /* border: 2px solid black; */
 }
-.add_story h4 ,
-.st_slide h4{
+
+.add_story h4,
+.st_slide h4 {
   font-size: 15px;
   margin-top: 10px;
 
 }
 
-.st_slide img{
+.st_slide img {
   width: 100%;
   height: 90%;
+  border-radius: 10px;
+
 }
 
 /* online member section styel here  */
-.online_member  {
+.online_member {
   align-items: center;
 }
-.online{
-/* position: absolute; */
-} 
-.inner{
+
+.online {
+  /* position: absolute; */
+}
+
+.inner {
   width: 10px;
   height: 10px;
   background-color: green;
   border-radius: 50%;
   /* position: relative; */
 }
-.online_member h3{
+
+.online_member h3 {
   margin-left: -25px;
 }
 
@@ -243,44 +290,70 @@ i {
   h2 {
     font-size: 22px;
   }
+
   .pf_content {
     margin-top: -30px;
   }
+
   .pf-btns {
     display: none;
   }
-  
+
 }
+
+@media (max-width: 750px) {
+  .nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .online_member_section {
+    display: none;
+  }
+}
+
 @media (max-width: 550px) {
   h2 {
     font-size: 18px;
   }
+
   h3 {
     font-size: 15px;
   }
+
   .action_btns ul {
     gap: 60px;
   }
+
 }
+
 @media (max-width: 430px) {
+
+  .add_story,
+  .st_slide {
+    width: 200px !important;
+  }
+
   .pf_content {
     margin-top: -10px;
   }
+
   .profile-pic {
     height: 115px;
   }
+
   .pf-name h1 {
     font-size: 18px;
   }
+
   .action_btns ul {
     gap: 30px;
   }
 
   .post_btns ul li,
-  .post_btns ul li i
-  {
+  .post_btns ul li i {
     font-size: 15px;
-    
+
   }
 
   .action_btns ul li,
